@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.form {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(43, 226, 89);
+  border-radius: 10px;
+  margin-top: 10%;
+  margin-left: 30%;
+}
+.form:checked {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(43, 226, 89);
+  border-radius: 10px;
+  margin-top: 10%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.radio {
+  margin: 20px auto;
+}
+
+.radio label {
+  font-size: xx-large;
+  font-weight: bolder;
+  color: rgb(224, 77, 32);
+  padding: 0px;
+  border-radius: 10px;
+}
+.label {
+  background-color: black;
+}
+
+#sign-in {
+  margin-left: 25%;
+  margin-top: 6%;
+  display: inline-block;
+}
+#sign-up {
+  margin-left: 9%;
+  margin-bottom: 3%;
+}
+.sign-in p {
+  background-color: none;
+  color: rgb(241, 15, 15);
+}
+.sign-in,
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.sign-in-form h2,
+.sign-up-form h2 {
+  text-align: center;
+}
+.sign-in a,
+.sign-up a {
+  background-color: rgb(226, 70, 43);
+  font-size: x-large;
+  color: black;
+  border-radius: 5px;
+}
+.sign-in input,
+.sign-in button,
+.sign-up input,
+.sign-up button {
+  border-radius: 10px;
+  height: 5vh;
+  width: 30vw;
+  outline: none;
+}
+.sign-in button,
+.sign-up button {
+  background-color: aqua;
+  margin-bottom: 1rem;
+}
+.sec {
+  display: none;
+}
+
+#sign-up:checked ~ .sign-up-form,
+#sign-in:checked ~ .sign-in-form {
+  display: block;
+}
